@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "pepsi-extended";
+    src: url(Font/pepsi/MonumentExtended-Ultrabold.otf);
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: rgb(0 37 255);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+
+@-webkit-keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.animate__heartBeat {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-duration: calc(var(--animate-duration)*1.3);
+    animation-duration: calc(var(--animate-duration)*1.3);
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+}
+
+
+.pepsi-logo:hover, .pepsi2:hover {
+    animation-name: heartBeat;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.nav-item a {
+    color: white;
+    font-size: 0.8em;
+    font-weight: 1000;
+}
+
+.pepsi-btn {
+    color: white;
+    font-size: 0.8em;
+    font-weight: 1000;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate(-3deg);
+        transform: scale3d(.9, .9, .9) rotate(-3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate(-3deg);
+        transform: scale3d(.9, .9, .9) rotate(-3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+.animate__tada {
+    -webkit-animation-name: tada;
+    animation-name: tada
+}
+
+.pepsi-btn:hover {
+    animation-name: tada;
+    animation-duration: 1s;
+}
+
+.hero__video{
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-collapse{
+        text-align: center;
+    }
+    .pepsi-btn{
+        margin-left: 50px;
+    }
+}
+
+.peptxt1{
+    font-size: 4.5em;
+    font-weight: 1000;
+    margin-top: 40px;
+    color: white;
+    font-family: 'pepsi-extended';
+}
+
+.peptxt2 {
+    font-size: 3em;
+    font-weight: 1000;
+    margin-top: -25px;
+    margin-bottom: 60px;
+    color: white;
+    font-family: 'pepsi-extended';
+}
+
+#p125 {
+    margin-top: -10px;
+    height: 400px;
+}
+
+.follow-btn {
+    font-size: 3.5em;
+    font-weight: 1000;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(0 37 255);   
+    padding: 15px 20px;
+    background-color: rgb(0 37 255);
+    /* margin-top: 50px; */
+}
+
+.mega-mix {
+    width: 100%;
+}
+
+.other__video {
+    width: 100%;
+}
+
+.img-sec {
+    margin-top: -5px;
+}
+
+.stay {
+    color: rgb(0 37 255);
+    font-size: 2.7em;
+    font-weight: 1000;
+    text-align: center;
+    font-family: 'pepsi-extended';
+    margin: 18px 0px;
+}
+
+.img-box {
+    border: 5px solid rgb(0 37 255);
+    display: inline-block;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.img-box > div {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0px;
+    margin: -2px;
+    z-index: 1;
+    transition: opacity 0.5s;
+}
+
+.img-box > div:hover {
+    opacity: 0.6;
+}
+
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    /* overflow: hidden; */
+    position: relative;
+    margin: 0 -2px;
+    padding: 0px;
+    transition: transform 0.5s;
+}
+
+.box:hover {
+    /* overflow: hidden; */
+    transform: rotate(7deg);
+}
+
+.img-box img {
+    width: 200px;
+    margin: auto -4px;
+    transition: transform 0.5s;
+}
+
+.img-box img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.footer {
+    background-color: rgb(0 37 255);
+    width: 100%;
+    height: 300px;
+}
+
+.foot1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 {
+    margin: auto;
+}
+
+.col-2 a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 1000;
+    margin-bottom: -20px;
+    transition: color 0.2s;
+}
+
+.col-2 a:hover {
+    color: rgba(255, 255, 255, 0.674);
+}
+
+.col-4 {
+    margin: auto;
+    padding-left: 80px;
+}
+
+.col-4 a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.col-4 a:hover {
+    color: rgba(255, 255, 255, 0.674);
+}
